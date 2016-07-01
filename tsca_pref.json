@@ -1,0 +1,137 @@
+{
+  "mtime": "2016/06/23 10:42:02", 
+  "license": "GNU General Public License V3, 29 June 2007",
+  "input": null, 
+  "output": null, 
+  "log": null, 
+  "template": null, 
+  "tmp_path": null, 
+  "key": [
+    "https://drive.google.com/uc?export=download&id=0B9XHssJwDUBdYkYwWG1PbEVVTFk",
+    "db6f3f06485c55b01cc84eef07eb67ef1e7224ef.sha1"
+  ],
+  "mode": null, 
+  "processes": null, 
+  "send_from": null, 
+  "send_to": null, 
+  "attach": null, 
+  "life 0001": {
+    "processes": "all", 
+    "job 0001": {
+      "mode": "PyFunc", 
+      "job": "xyz_db_func", 
+      "preference": null, 
+      "log": null, 
+      "input": "./", 
+      "output": "./db", 
+      "filter_name": "_min.xyz", 
+      "pot_key": "eng=", 
+      "db_basename": "xyz", 
+      "max_db_num": 5000, 
+      "max_write_num": 1000
+    }
+  }, 
+  "life 0002": {
+    "processes": "all", 
+    "job 0001": {
+      "mode": "PyFunc", 
+      "job": "xyz_db_cluster_id_func", 
+      "preference": null, 
+      "log": null, 
+      "input": "./db", 
+      "output": "input", 
+      "db_file": {
+        "os_tools.file_list": {
+          "path": "./db",
+          "keys": ".db"
+        },
+        "mp": true
+      }, 
+      "filter_name": null
+    }
+  }, 
+  "life 0003": {
+    "processes": "all", 
+    "job 0001": {
+      "mode": "PyFunc", 
+      "job": "xyz_db_moment_func", 
+      "preference": null, 
+      "log": null, 
+      "input": "./db", 
+      "output": "input", 
+      "db_file": {
+        "os_tools.file_list": {
+          "path": "./db",
+          "keys": ".db"
+        },
+        "mp": true
+      }, 
+      "filter_name": null
+    }
+  }, 
+  "life 0004": {
+    "processes": "all", 
+    "job 0001": {
+      "mode": "PyFunc", 
+      "job": "xyz_db_tsca_func", 
+      "preference": null, 
+      "log": null, 
+      "input": "./db", 
+      "output": "input", 
+      "db_file": null, 
+      "filter_name": {
+        "os_tools.file_list": {
+          "path": "./db",
+          "keys": ".db"
+        },
+        "mp": true
+      }, 
+      "usr_threshold": 0.85, 
+      "use_cluster_id": true
+    }
+  }, 
+  "life 0005": {
+    "processes": "all", 
+    "job 0001": {
+      "mode": "PyFunc", 
+      "job": "core_join_db_func", 
+      "preference": null, 
+      "log": null, 
+      "input": "./db", 
+      "output": "input", 
+      "db_file": null, 
+      "filter_name": ".tscadb", 
+      "join_db_file": "join.joindb"
+    }
+  }, 
+  "life 0006": {
+    "processes": "all", 
+    "job 0001": {
+      "mode": "PyFunc", 
+      "job": "xyz_db_tsca_func", 
+      "preference": null, 
+      "log": null, 
+      "input": "./db", 
+      "output": "input", 
+      "db_file": "join.joindb", 
+      "filter_name": null, 
+      "usr_threshold": 0.85, 
+      "use_cluster_id": true
+    }
+  }, 
+  "life 0007": {
+    "processes": "all", 
+    "job 0001": {
+      "mode": "PyFunc", 
+      "job": "core_db_xyz_func", 
+      "preference": null, 
+      "log": null, 
+      "input": "./db", 
+      "output": "./xyz", 
+      "pot_key": "eng=", 
+      "db_file": "join.joindb", 
+      "filter_name": null, 
+      "use_cluster_id": true
+    }
+  }
+}
