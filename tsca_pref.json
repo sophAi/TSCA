@@ -24,7 +24,7 @@
       "log": null, 
       "input": "./", 
       "output": "./db", 
-      "filter_name": "*.xyz", 
+      "filter_name": ".xyz", 
       "pot_key": "eng=", 
       "db_basename": "xyz", 
       "max_db_num": 5000, 
@@ -132,6 +132,24 @@
       "db_file": "join.joindb", 
       "filter_name": null, 
       "use_cluster_id": true
+    }
+  },
+  "life 0008": {
+    "processes": 1,
+    "job 0001": {
+      "mode": "PyFunc",
+      "job": "core_shell_func",
+      "preference": null,
+      "log": null,
+      "title": "shell cmd",
+      "begin": "rm -rf",
+      "src_base": "./db",
+      "src": "",
+      "middle": "",
+      "des_base": "",
+      "des": "",
+      "end": "",
+      "test_cmd": false
     }
   }
 }

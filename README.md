@@ -10,15 +10,17 @@ Author: Po-Jen Hsu
 
 Requirements:
 
-Linux, Python3.x, and numpy.
+Linux, Python(>=3.5), and numpy.
 
 How to run:
 
 1. Put tsca.py and tsca_pref.json in your working directory that contains xyz files.
 
-2. Run "python3 tsca.py tsca_pref.json" to perform TSCA for your xyz files.
+2. Change the permission of tsca.py by typing "chmod u+rx tsca.py".
 
-3. The results will be stored in the xyz folder by default.
+3. Run "./tsca.py tsca_pref.json" to perform TSCA for your xyz files.
+
+4. The results will be stored in the xyz folder by default.
 
 Options in pref.json file:
 
