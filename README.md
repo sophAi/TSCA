@@ -10,12 +10,30 @@ Author: Po-Jen Hsu
 
 Requirements:
 
-Linux, Python3.x, and numpy
+Linux, Python3.x, and numpy.
 
 How to run:
 
 1. Put tsca.py and tsca_pref.json in your working directory that contains xyz files.
 
-2. Run python3 tsca.py tsca_pref.json to perform TSCA for your xyz files.
+2. Run "python3 tsca.py tsca_pref.json" to perform TSCA for your xyz files.
 
 3. The results will be stored in the xyz folder by default.
+
+Options in pref.json file:
+
+1. "mode": "skip" will skip the job.
+
+2. "processes": 1 will use only one core to perform each job.
+
+3. "output": "./some_path/" will specify the output directory.
+
+4. "usr_threshold": float_value will treat the xyz coordinates that > float_value as duplicated ones.
+
+5. "pot_key": "eng=" enable parsing function to search for the energy keyword in the xyz info lines. Please refer to the example1.xyz.
+
+6. "use_cluster_id": false will disable the first stage clustering method that analyzes ring/chain topology for methanol cluster.
+
+
+Note:
+    example1.xyz and example2.xyz is for quick testing. Please delete them in your working folder. The TSCA will search for all .xyz files in the current folder and the sub-folders.

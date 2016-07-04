@@ -24,7 +24,7 @@
       "log": null, 
       "input": "./", 
       "output": "./db", 
-      "filter_name": "_min.xyz", 
+      "filter_name": "*.xyz", 
       "pot_key": "eng=", 
       "db_basename": "xyz", 
       "max_db_num": 5000, 
