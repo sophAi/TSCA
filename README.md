@@ -38,4 +38,6 @@ Options in pref.json file:
 
 
 Note:
-    example1.xyz and example2.xyz is for quick testing. Please delete them in your working folder. The TSCA will search for all .xyz files in the current folder and the sub-folders.
+    Please delete the example*.xyz files before performing TSCA for your xyz coordinates bacause TSCA will search for all the .xyz files in the current folder and the sub-folders.
+
+    You can also change the options from "filter_name:" ".xyz" to "filter_name": ".xyz -example" to exclude those files.
