@@ -44,4 +44,4 @@ Note:
 
 1. Please delete the example*.xyz files before performing TSCA for your xyz coordinates bacause TSCA will search for all the .xyz files in the current folder and the sub-folders.
 
-2. You can also change the options from "filter_name:" ".xyz" to "filter_name": ".xyz -example" to exclude those files.
+2. You can also change the options from "filter_name:" ".xyz" to "filter_name": ".xyz -example" to exclude those example files.
