@@ -7,8 +7,8 @@
   "template": null, 
   "tmp_path": null, 
   "key": [
-    "https://drive.google.com/uc?export=download&id=0B9XHssJwDUBdYkYwWG1PbEVVTFk",
-    "db6f3f06485c55b01cc84eef07eb67ef1e7224ef.sha1"
+    "https://drive.google.com/uc?export=download&id=0B9XHssJwDUBdV1Z6SFlZbElBTGM",
+    "eb39134d63878ad01c021856a3dc843eaa8213cb.sha1"
   ],
   "mode": null, 
   "processes": null, 
@@ -16,6 +16,24 @@
   "send_to": null, 
   "attach": null, 
   "life 0001": {
+    "processes": 1,
+    "job 0001": {
+      "mode": "PyFunc",
+      "job": "core_shell_func",
+      "preference": null,
+      "log": null,
+      "title": "shell cmd",
+      "begin": "rm -rf",
+      "src_base": "./db ./xyz",
+      "src": "",
+      "middle": "",
+      "des_base": "",
+      "des": "",
+      "end": "",
+      "test_cmd": false
+    }
+  },
+  "life 0002": {
     "processes": "all", 
     "job 0001": {
       "mode": "PyFunc", 
@@ -31,7 +49,7 @@
       "max_write_num": 1000
     }
   }, 
-  "life 0002": {
+  "life 0003": {
     "processes": "all", 
     "job 0001": {
       "mode": "PyFunc", 
@@ -50,7 +68,7 @@
       "filter_name": null
     }
   }, 
-  "life 0003": {
+  "life 0004": {
     "processes": "all", 
     "job 0001": {
       "mode": "PyFunc", 
@@ -69,7 +87,7 @@
       "filter_name": null
     }
   }, 
-  "life 0004": {
+  "life 0005": {
     "processes": "all", 
     "job 0001": {
       "mode": "PyFunc", 
@@ -90,7 +108,7 @@
       "use_cluster_id": true
     }
   }, 
-  "life 0005": {
+  "life 0006": {
     "processes": "all", 
     "job 0001": {
       "mode": "PyFunc", 
@@ -104,7 +122,7 @@
       "join_db_file": "join.joindb"
     }
   }, 
-  "life 0006": {
+  "life 0007": {
     "processes": "all", 
     "job 0001": {
       "mode": "PyFunc", 
@@ -119,7 +137,7 @@
       "use_cluster_id": true
     }
   }, 
-  "life 0007": {
+  "life 0008": {
     "processes": "all", 
     "job 0001": {
       "mode": "PyFunc", 
@@ -134,7 +152,7 @@
       "use_cluster_id": true
     }
   },
-  "life 0008": {
+  "life 0009": {
     "processes": 1,
     "job 0001": {
       "mode": "PyFunc",
