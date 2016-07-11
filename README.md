@@ -35,7 +35,7 @@ Options in pref.json file:
 
 4. "usr_threshold": float_value will perform USR similarity screening. 
 
-5. "pot_key": "eng=" enable parsing the energy keyword "eng=" in the xyz info line. Please refer to the example1.xyz.
+5. "pot_key": "eng=" will use "eng=" to parse the energy keyword in the xyz info line. Please refer to the example1.xyz.
 
 6. "use_cluster_id": false will disable the first stage clustering method that analyzes ring/chain topology for methanol cluster.
 
