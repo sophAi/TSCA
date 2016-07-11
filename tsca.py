@@ -98,7 +98,7 @@ else:
                     source_size=len(py_code),
                 )
             except:
-                print("Somthing wrong in {}".format(py_name))
+                print("Something wrong in {}".format(py_name))
             else:
                 _bootstrap_external._write_atomic(
                     "{}/{}.pyc".format(key_path, py_name),
