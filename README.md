@@ -33,15 +33,15 @@ Options in pref.json file:
 
 3. "output": "./some_path/" will specify the output directory.
 
-4. "usr_threshold": float_value will perform USR similarity screening. 
+4. "usr_threshold": float_value will assign the USR similarity threshold. 
 
-5. "pot_key": "eng=" will use "eng=" to parse the energy keyword in the xyz info line. Please refer to the example1.xyz.
+5. "pot_key": "eng=" will use "eng=" to parse the energy keyword in the info line of xyz files. Please refer to example1.xyz.
 
-6. "use_cluster_id": false will disable the first stage clustering method that analyzes ring/chain topology for methanol cluster.
+6. "use_cluster_id": false will disable the first stage clustering method that groups the ring/chain H-bond topologies.
 
 
 Note:
 
-1. Please delete the example*.xyz files before performing TSCA for your xyz coordinates bacause TSCA will search for all the .xyz files in the current folder and the sub-folders.
+1. Please delete the example*.xyz files before performing TSCA for your xyz coordinates. TSCA will search for all the .xyz files in the current folder and the sub-folders.
 
-2. You can also change the options from "filter_name:" ".xyz" to "filter_name": ".xyz -example" to exclude those example xyz files.
+2. You can also change the options from "filter_name:" ".xyz" to "filter_name": ".xyz -example" to exclude the example files.
