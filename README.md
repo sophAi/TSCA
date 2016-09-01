@@ -16,6 +16,7 @@ Requirements:
 
 * Linux, Python(>=3.5), and numpy.
 
+
 How to run:
 -----------
 
@@ -23,11 +24,12 @@ How to run:
 
 2. Change the permission of tsca.py by typing `chmod u+rx tsca.py`.
 
-3. Run `./tsca.py tsca_pref.json` to perform TSCA for your xyz files.
+3. Run `python3 tsca.py tsca_pref.json` to perform TSCA.
 
-4. The results will be stored in the xyz folder by default.
+4. The resulting xyz files will be stored in the xyz folder by default.
 
-Options in pref.json file:
+
+Options in tsca_pref.json file:
 --------------------------
 
 1. `"mode": "skip"` will skip the job.
@@ -46,6 +48,6 @@ Options in pref.json file:
 Note:
 -----
 
-1. Please delete the example*.xyz files before performing TSCA for your xyz coordinates. TSCA will search for all the .xyz files in the current folder and the sub-folders.
+1. Please delete the example*.xyz files before performing TSCA with your own xyz files. TSCA was designed to search for all the .xyz files in the current folder and the sub-folders.
 
-2. You can also change the options from `"filter_name:" ".xyz"` to `"filter_name": ".xyz -example"` to exclude the example files.
+2. You can also change the options from `"filter_name:" ".xyz"` to `"filter_name": ".xyz -example"` in the json file to exclude the example files.
