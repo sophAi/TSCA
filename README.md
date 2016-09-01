@@ -1,3 +1,5 @@
+![image](http://sophai.github.io/arch_2013/files_2013/Coding/tsca/figure_1.png)
+
 TSCA
 
 Two-stage Clustering Algorithm
