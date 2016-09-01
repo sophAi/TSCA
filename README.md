@@ -14,38 +14,38 @@ Author: Po-Jen Hsu
 
 Requirements:
 
-Linux, Python(>=3.5), and numpy.
+* Linux, Python(>=3.5), and numpy.
 
 How to run:
 -----------
 
-* Put tsca.py and tsca_pref.json in your working directory that contains xyz files.
+1. Put tsca.py and tsca_pref.json in your working directory that contains xyz files.
 
-* Change the permission of tsca.py by typing `chmod u+rx tsca.py`.
+2. Change the permission of tsca.py by typing `chmod u+rx tsca.py`.
 
-* Run `./tsca.py tsca_pref.json` to perform TSCA for your xyz files.
+3. Run `./tsca.py tsca_pref.json` to perform TSCA for your xyz files.
 
-* The results will be stored in the xyz folder by default.
+4. The results will be stored in the xyz folder by default.
 
 Options in pref.json file:
 --------------------------
 
-* "mode": "skip" will skip the job.
+1. "mode": "skip" will skip the job.
 
-* "processes": 1 will use only one core.
+2. "processes": 1 will use only one core.
 
-* "output": "./some_path/" will specify the output directory.
+3. "output": "./some_path/" will specify the output directory.
 
-* "usr_threshold": float_value will assign the USR similarity threshold. 
+4. "usr_threshold": float_value will assign the USR similarity threshold. 
 
-* "pot_key": "eng=" will use "eng=" to parse the energy keyword in the info line of xyz files. Please refer to example1.xyz.
+5. "pot_key": "eng=" will use "eng=" to parse the energy keyword in the info line of xyz files. Please refer to example1.xyz.
 
-* "use_cluster_id": false will disable the first stage clustering method that groups the ring/chain H-bond topologies.
+6. "use_cluster_id": false will disable the first stage clustering method that groups the ring/chain H-bond topologies.
 
 
 Note:
 -----
 
-* Please delete the example*.xyz files before performing TSCA for your xyz coordinates. TSCA will search for all the .xyz files in the current folder and the sub-folders.
+1. Please delete the example*.xyz files before performing TSCA for your xyz coordinates. TSCA will search for all the .xyz files in the current folder and the sub-folders.
 
-* You can also change the options from "filter_name:" ".xyz" to "filter_name": ".xyz -example" to exclude the example files.
+2. You can also change the options from "filter_name:" ".xyz" to "filter_name": ".xyz -example" to exclude the example files.
