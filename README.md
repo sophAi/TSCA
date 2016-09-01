@@ -30,17 +30,17 @@ How to run:
 Options in pref.json file:
 --------------------------
 
-1. "mode": "skip" will skip the job.
+1. `"mode": "skip"` will skip the job.
 
-2. "processes": 1 will use only one core.
+2. `"processes": 1` will disable multiprocessing.
 
-3. "output": "./some_path/" will specify the output directory.
+3. `"output": "./some_path/"` will specify the output directory.
 
-4. "usr_threshold": float_value will assign the USR similarity threshold. 
+4. `"usr_threshold": float_value` will assign the USR similarity threshold. 
 
-5. "pot_key": "eng=" will use "eng=" to parse the energy keyword in the info line of xyz files. Please refer to example1.xyz.
+5. `"pot_key": "eng="` will use `"eng="` to parse the energy keyword in the info line of xyz files. Please refer to example1.xyz.
 
-6. "use_cluster_id": false will disable the first stage clustering method that groups the ring/chain H-bond topologies.
+6. `"use_cluster_id": false` will disable the first stage clustering method that groups the ring/chain H-bond topologies.
 
 
 Note:
@@ -48,4 +48,4 @@ Note:
 
 1. Please delete the example*.xyz files before performing TSCA for your xyz coordinates. TSCA will search for all the .xyz files in the current folder and the sub-folders.
 
-2. You can also change the options from "filter_name:" ".xyz" to "filter_name": ".xyz -example" to exclude the example files.
+2. You can also change the options from `"filter_name:" ".xyz"` to `"filter_name": ".xyz -example"` to exclude the example files.
