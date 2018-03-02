@@ -147,7 +147,7 @@
       "input": "./db", 
       "output": "./xyz", 
       "pot_key": "eng=", 
-      "db_file": "join.joindb", 
+      "db_file": "join.tscadb", 
       "filter_name": null, 
       "use_cluster_id": true
     }
